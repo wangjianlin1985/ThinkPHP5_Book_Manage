@@ -1,0 +1,42 @@
+body{
+	background-color: #c0a16b;
+}
+#login {
+	padding:6px 0 0 0;
+}
+p {
+	height:22px;
+	line-height:22px;
+	padding:4px 0 0 25px;
+}
+.textbox {
+	height:22px;
+	padding:0 2px;
+}
+#btn {
+	text-align:center;
+}
+.easyui-linkbutton {
+	padding:0 10px;
+}
+
+.panel-title {
+	font-size: 14px;
+	color: #ac2925;
+
+}
+
+.window {
+	border-color: #c0a16b;
+}
+.window .window-body {
+	border-color: #c0a16b;
+}
+.panel-header, .panel-body {
+	border-color: #c0a16b;
+}
+
+.dialog-button {
+	border-color: #dddddd #c0a16b #c0a16b #c0a16b;
+}
+

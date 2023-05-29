@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+  <TITLE>查看图书详情</TITLE>
+  <link href="__PUBLIC__/plugins/bootstrap.css" rel="stylesheet">
+  <link href="__PUBLIC__/plugins/bootstrap-dashen.css" rel="stylesheet">
+  <link href="__PUBLIC__/plugins/font-awesome.css" rel="stylesheet">
+  <link href="__PUBLIC__/plugins/animate.css" rel="stylesheet"> 
+</head>
+<body style="margin-top:70px;"> 
+{include file="common/header" /}
+<div class="container">
+	<ul class="breadcrumb">
+  		<li><a href="__PUBLIC__/index.php">首页</a></li>
+  		<li><a href="{:url('Book/frontlist')}">图书信息</a></li>
+  		<li class="active">详情查看</li>
+	</ul>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书条形码:</div>
+		<div class="col-md-10 col-xs-6">{$book.barcode}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书名称:</div>
+		<div class="col-md-10 col-xs-6">{$book.bookName}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书所在类别:</div>
+		<div class="col-md-10 col-xs-6">{$book.bookTypeObjF.bookTypeName}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书价格:</div>
+		<div class="col-md-10 col-xs-6">{$book.price}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">库存:</div>
+		<div class="col-md-10 col-xs-6">{$book.count}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">出版日期:</div>
+		<div class="col-md-10 col-xs-6">{$book.publishDate}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">出版社:</div>
+		<div class="col-md-10 col-xs-6">{$book.publish}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书图片:</div>
+		<div class="col-md-10 col-xs-6"><img class="img-responsive" src="__PUBLIC__/{$book.bookPhoto}"  border="0px"/></div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书简介:</div>
+		<div class="col-md-10 col-xs-6">{$book.bookDesc}</div>
+	</div>
+	<div class="row bottom15"> 
+		<div class="col-md-2 col-xs-4 text-right bold">图书文件:</div>
+		<div class="col-md-10 col-xs-6"><a href="__PUBLIC__/{$book.bookFile}" target="_blank">{$book.bookFile}</a></div>
+	</div>
+	<div class="row bottom15">
+		<div class="col-md-2 col-xs-4"></div>
+		<div class="col-md-6 col-xs-6">
+			<button onclick="history.back();" class="btn btn-primary">返回</button>
+		</div>
+	</div>
+</div> 
+{include file="common/footer" /}
+<script src="__PUBLIC__/plugins/jquery.min.js"></script>
+<script src="__PUBLIC__/plugins/bootstrap.js"></script>
+<script src="__PUBLIC__/plugins/wow.min.js"></script>
+<script>
+$(function(){
+        /*小屏幕导航点击关闭菜单*/
+        $('.navbar-collapse a').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+ })
+ </script> 
+</body>
+</html>
+

@@ -1,0 +1,96 @@
+.logo {
+	margin-left: 5px;
+	width:380px;
+	height:50px;
+	line-height:50px;
+	text-align:left;
+	font-size:20px;
+	font-weight:bold;
+	float:left;
+	color:#fff;
+}
+.logout {
+	float:right;
+	padding:30px 15px 0 0;
+	color:#fff;
+}
+.dialog-button {
+	text-align:center;
+}
+.textbox {
+	height:22px;
+	padding:0 2px;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#nav {
+	height: 100%;
+}
+
+.tree-title {
+    font-size: 14px;
+	color: #ac2925;
+}
+
+.panel-title {
+    font-size: 14px;
+	color: #b94a48;
+
+}
+
+.panel-header {
+	border-color: #c0a16b;
+}
+
+
+.tabs-title {
+    font-size: 14px;
+	color: #b94a48;
+}
+
+.tabs-header {
+	background-color: #DAD8D8;
+}
+
+.tabs  {
+	border-color: #c0a16b;
+}
+
+.tabs li a.tabs-inner,.tabs li.tabs-selected a.tabs-inner  {
+	border-color: #c0a16b;
+}
+
+.tabs li.tabs-selected a.tabs-inner {
+	border-bottom: 1px solid #ffffff;
+}
+
+.tabs li a.tabs-inner:hover {
+	background-color: #DAD8D8;
+}
+
+.easyui-linkbutton:hover {
+	background-color: #DAD8D8;
+}
+
+.layout-split-west {
+	border-right: 5px solid #c0a16b;
+}
+
+.layout-split-south {
+	border-top: 5px solid #c0a16b;
+}
+
+.layout-split-north {
+	border-bottom: 5px solid #c0a16b;
+}
+
+.layout-expand-west {
+	background-color: #DAD8D8;
+}
+
